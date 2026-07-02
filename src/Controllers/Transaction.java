@@ -1,3 +1,5 @@
+package Controllers;
+
 public class Transaction {
 
     private String transactionType;

@@ -2,9 +2,6 @@
 import template.*;
 import Controllers.*;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 public class Main {
 
     static Frame frame = new Frame();
@@ -13,11 +10,16 @@ public class Main {
         optionsPane optionPane = new optionsPane();
         optionPane.addListener(e -> {
 
-            if(e.getSource() == optionsPane.tempButton){
+            if(e.getSource() == optionsPane.checkBalance){
 
                 System.out.println("this works");
                 checkBalancePane checkBalanc = new checkBalancePane();
-                frame.setCurrentFrame(checkBalanc);
+                withdrawPane withdraw = new withdrawPane();
+                frame.setCurrentFrame(withdraw);
+
+            } else if (e.getSource() == optionsPane.withdraw){
+
+                System.out.println("this works too");
 
             }
         });

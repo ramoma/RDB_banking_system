@@ -3,7 +3,10 @@ package template;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Container;
+import java.awt.Color;
+import java.awt.BorderLayout;
 
 
 public class Frame extends JFrame{
@@ -16,7 +19,6 @@ public class Frame extends JFrame{
         setSize(1425,991);
         setTitle("RDB Banking");
         setResizable(false);
-
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -28,10 +30,8 @@ public class Frame extends JFrame{
         sideBar.setPreferredSize(new Dimension(353,913));
         sideBar.setBackground(new Color(217,217,217));
 
+        contentContainer.setPreferredSize(new Dimension(1072, 991));
 
-        contentContainer.setLayout(new FlowLayout());
-        contentContainer.setPreferredSize(new Dimension(1072, 93));
-//        contentContainer.setBackground(Color.RED);
 
         container.add(topPanel, BorderLayout.NORTH);
         container.add(sideBar, BorderLayout.WEST);
@@ -44,6 +44,7 @@ public class Frame extends JFrame{
 
         contentContainer.removeAll();
         contentContainer.revalidate();
+        contentContainer.repaint();
         contentContainer.add(panel);
 
     }

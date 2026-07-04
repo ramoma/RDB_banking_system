@@ -7,15 +7,15 @@ public class ATMService {
     private List<Transaction> transactions;
 
 
-    public double checkBalance(){
-        return account.getBalance;
-    }
-
-    public int withdraw(amount){
-
-    }
-
-    public String showTransaction(){
-        (transactions);
-    }
+//    public double checkBalance(){
+//        return account.getBalance;
+//    }
+//
+//    public int withdraw(int amount){
+//        System.out.println("temp");
+//    }
+//
+//    public String showTransaction(){
+//        (transactions);
+//    }
 }

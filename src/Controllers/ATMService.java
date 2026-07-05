@@ -12,7 +12,9 @@ public class ATMService {
     }
 
     public int withdraw(amount){
-
+    if (amount > 0 && amount <= account.getBalance()) {
+        account.setBalance(account.setBalance() - amount);
+    }
     }
 
     public String showTransaction(){

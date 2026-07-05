@@ -13,4 +13,10 @@ public class Account {
         this.pin = pin;
         this.balance = balance;
     }
+    public double getBalance(){
+        return this.balance;
+    }
+    public double setBalance(double amount){
+
+    }
 }

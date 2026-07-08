@@ -8,14 +8,19 @@ public class ATMService {
 
 
     public double checkBalance(){
-        return account.getBalance;
+        return account.getBalance();
     }
 
     public int withdraw(amount){
-
+        if (amount > 0 && amount <= account.getBalance()) {
+            account.setBalance(transactionType, amount, dateTime);
+        } else {
+            System.out.println("Insufficient Balance.");
+        }
+        return 0;
     }
 
     public String showTransaction(){
-        (transactions);
+        return "Nigga";
     }
 }

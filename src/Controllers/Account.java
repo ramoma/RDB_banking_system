@@ -18,8 +18,19 @@ public class Account {
     public double getBalance(){
         return this.balance;
     }
-    public double setBalance(int transactionType, double amount, String dateTime){
+
+
+
+    public void setBalance(String transactionType, double amount, String dateTime){
         this.transaction = new Transaction(transactionType, amount, dateTime);
-        this.balance += amount;
+
+        if(transactionType.equals("Withraw")){
+            this.balance -= amount;
+        }
+        if(transactionType.equals("Deposit")){
+            this.balance += amount;
+        }
+
     }
 }
+

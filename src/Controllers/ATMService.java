@@ -11,16 +11,25 @@ public class ATMService {
         return account.getBalance();
     }
 
-    public int withdraw(amount){
+    public void withdraw(String transactionType, double amount, String dateTime){
         if (amount > 0 && amount <= account.getBalance()) {
             account.setBalance(transactionType, amount, dateTime);
         } else {
             System.out.println("Insufficient Balance.");
         }
-        return 0;
+
+    }
+    public void deposit(String transactionType, double amount, String dateTime){
+        if (amount > 0) {
+            account.setBalance(transactionType, amount, dateTime);
+        } else {
+            System.out.println("Insufficient Balance.");
+        }
+
     }
 
-    public String showTransaction(){
-        return "Nigga";
+
+    public String showTransactions(){
+        return account.transaction.showTransactionHistory();
     }
 }

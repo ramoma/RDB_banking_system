@@ -12,4 +12,8 @@ public class Transaction {
         this.dateTime = dateTime;
     }
 
+    public String showTransactionHistory(){
+        return "Nigga";
+    }
+
 }

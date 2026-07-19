@@ -12,7 +12,7 @@ public class Transaction {
         this.dateTime = dateTime;
     }
 
-    public String showTransactionHistory(){
+    protected String getTransactionHistory(){
         return "Nigga";
     }
 

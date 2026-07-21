@@ -29,7 +29,7 @@ public class ATMService {
     }
 
 
-    public String showTransactions(){
-        return account.transaction.showTransactionHistory();
+    private String showTransactions(){
+        return account.transaction.getTransactionHistory();
     }
 }

@@ -1,6 +1,6 @@
+package Main;
 
 import template.*;
-import Controllers.*;
 
 public class Main {
 

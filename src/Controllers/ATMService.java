@@ -23,7 +23,7 @@ public class ATMService {
         if (amount > 0) {
             account.setBalance(transactionType, amount, dateTime);
         } else {
-            System.out.println("Insufficient Balance.");
+            System.out.println("Broke.");
         }
 
     }

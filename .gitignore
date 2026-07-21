@@ -32,3 +32,6 @@ bin/
 
 ### environment ###
 .env
+
+### connectors ###
+/connector
